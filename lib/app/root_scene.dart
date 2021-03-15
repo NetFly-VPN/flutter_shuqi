@@ -19,12 +19,12 @@ class RootSceneState extends State<RootScene> {
   List<Image> _tabImages = [
     Image.asset('img/tab_bookshelf_n.png'),
     Image.asset('img/tab_bookstore_n.png'),
-    Image.asset('img/tab_me_n.png'),
+    // Image.asset('img/tab_me_n.png'),
   ];
   List<Image> _tabSelectedImages = [
     Image.asset('img/tab_bookshelf_p.png'),
     Image.asset('img/tab_bookstore_p.png'),
-    Image.asset('img/tab_me_p.png'),
+    // Image.asset('img/tab_me_p.png'),
   ];
 
   @override
@@ -74,7 +74,7 @@ class RootSceneState extends State<RootScene> {
         children: <Widget>[
           BookshelfScene(),
           HomeScene(),
-          MeScene(),
+          // MeScene(),
         ],
         index: _tabIndex,
       ),
@@ -84,7 +84,7 @@ class RootSceneState extends State<RootScene> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: getTabIcon(0), title: Text('书架')),
           BottomNavigationBarItem(icon: getTabIcon(1), title: Text('书城')),
-          BottomNavigationBarItem(icon: getTabIcon(2), title: Text('我的')),
+          // BottomNavigationBarItem(icon: getTabIcon(2), title: Text('我的')),
         ],
         currentIndex: _tabIndex,
         onTap: (index) {
